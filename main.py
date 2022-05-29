@@ -221,6 +221,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         return fname[0]
 
     def savefiles(self):
+        #Obtiene el directorio
         fname = QFileDialog.getExistingDirectory(self, 'Saving file', 'C:/Users/DELL/Documents')
         return fname.replace('/', '\\\\')
 
